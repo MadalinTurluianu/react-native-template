@@ -22,9 +22,11 @@
       "@store/*": ["store/*"],
       "@types/*": ["types/*"],
       "@views/*": ["views/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@models/*": ["models/*"],
+      "@features/*": ["features/*"],
     }
   },
-
+  "exclude": ["__tests__/**/*-test.ts"],
   "extends": "expo/tsconfig.base"
 }
