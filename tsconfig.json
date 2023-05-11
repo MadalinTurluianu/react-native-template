@@ -1,6 +1,30 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["ES7", "ES2022"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@helpers/*": ["helpers/*"],
+      "@apis/*": ["apis/*"],
+      "@constants/*": ["constants/*"],
+      "@styles/*": ["styles/*"],
+      "@store/*": ["store/*"],
+      "@types/*": ["types/*"],
+      "@views/*": ["views/*"],
+      "@hooks/*": ["hooks/*"]
+    }
+  },
+
+  "extends": "expo/tsconfig.base"
 }
