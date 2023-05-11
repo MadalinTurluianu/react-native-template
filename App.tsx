@@ -1,22 +1,15 @@
-import { TestComponent } from "@components/TestComponent";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { TestComponent } from '@components/TestComponent';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const { Navigator, Screen } = createNativeStackNavigator();
 
 export default function App() {
   return (
-    // eslint-disable-next-line @typescript-eslint/no-use-before-define
-    <View style={styles.container}>
-      <TestComponent />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Navigator>
+        <Screen name="Main" component={TestComponent} />
+      </Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
