@@ -24,7 +24,7 @@
       "@views/*": ["views/*"],
       "@hooks/*": ["hooks/*"],
       "@models/*": ["models/*"],
-      "@features/*": ["features/*"],
+      "@features/*": ["features/*"]
     }
   },
   "exclude": ["__tests__/**/*-test.ts"],
