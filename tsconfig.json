@@ -21,7 +21,7 @@
       "@styles/*": ["styles/*"],
       "@store/*": ["store/*"],
       "@types/*": ["types/*"],
-      "@views/*": ["views/*"],
+      "@screens/*": ["screens/*"],
       "@hooks/*": ["hooks/*"],
       "@models/*": ["models/*"],
       "@features/*": ["features/*"]

@@ -1,0 +1,1 @@
+export { TestChildComponent } from './TestChildComponent';
