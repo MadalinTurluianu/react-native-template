@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 
 export default function App() {
   return (
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     <View style={styles.container}>
       <TestComponent />
       <StatusBar style="auto" />
